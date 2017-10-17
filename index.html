@@ -1,52 +1,34 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Mozilla campus club Offical</title>
+    <meta charset="UTF-8">
+    <title>CSS Only Navigation Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
-    font-size: 30px;
-
-}
-
-li a:hover {
-    background-color: #111111;
-}
-
-
-</style>
-
-<ul>
-  <li><a href="https://mozilla-campus-club-iit.github.io/">Home</a></li>
-  <li><a href="/about/">About</a></li>  <!-- Ability to add multiple pages, just add
-    a new line here with the href tag pointing to the url of the new page!-->
-  <li><a href="/contact/">Contact</a></li>
-
-</ul>
-
 <body>
+<div style="text-align: center">
+    <ul id="menu">
+        <li><a href="https://mozilla-campus-club-iit.github.io/">Home</a></li>
+        <li>
+            <a href="/about/">About</a>
+            <ul class="hidden">
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">What We Do</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/contact/">Contact</a>
+            <ul class="hidden">
+                <li><a href="#">Email</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
+<div>
 <h1>Mozilla campus club of IIT</h1>
 <p>Campus Club under construction</p>
-
+</div>
 </body>
 </html>
